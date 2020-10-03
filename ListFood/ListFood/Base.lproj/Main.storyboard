@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="VaL-6q-VVI">
-                                <rect key="frame" x="22" y="94" width="370" height="264"/>
+                                <rect key="frame" x="22" y="94" width="370" height="327"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S3Z-tM-WX9">
                                         <rect key="frame" x="0.0" y="0.0" width="370" height="34"/>
@@ -43,6 +43,9 @@
                                             <segment title="Limpeza"/>
                                         </segments>
                                         <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="handleCategoriaChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="jTc-Bs-w3b"/>
+                                        </connections>
                                     </segmentedControl>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1be-af-44z">
                                         <rect key="frame" x="0.0" y="233" width="370" height="32"/>
@@ -51,29 +54,44 @@
                                             <segment title="Não vegano"/>
                                         </segments>
                                         <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="handleVeganoChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="oGZ-Ua-yte"/>
+                                        </connections>
                                     </segmentedControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMf-66-uHK">
+                                        <rect key="frame" x="0.0" y="289" width="370" height="38"/>
+                                        <color key="backgroundColor" red="0.71514259745751296" green="0.15054326942571605" blue="0.26375104395783638" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Cadastrar">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleCadastrarClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ftz-1z-rhT"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VaL-6q-VVI" secondAttribute="trailing" constant="22" id="czg-ZT-nlc"/>
-                            <constraint firstItem="VaL-6q-VVI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="d9O-tM-BxV"/>
-                            <constraint firstItem="VaL-6q-VVI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="nlG-zZ-h6U"/>
+                            <constraint firstItem="VaL-6q-VVI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="8Uq-VS-zL5"/>
+                            <constraint firstItem="VaL-6q-VVI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="jCn-KD-GtW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VaL-6q-VVI" secondAttribute="trailing" constant="22" id="xa9-pF-NoV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="cadastrarButton" destination="vMf-66-uHK" id="Ccs-em-iOM"/>
                         <outlet property="categoriaSegmented" destination="FdU-9d-exr" id="OHM-Ub-USl"/>
+                        <outlet property="isVeganoSegmented" destination="1be-af-44z" id="YCn-io-fuA"/>
                         <outlet property="nomeTextField" destination="S3Z-tM-WX9" id="htx-Ma-RxR"/>
                         <outlet property="pesoTextField" destination="nrj-k8-BLs" id="iEN-S1-kjU"/>
                         <outlet property="precoTextField" destination="ihH-Xg-ZdU" id="QR9-TP-KDz"/>
-                        <outlet property="veganoSegmented" destination="1be-af-44z" id="YCn-io-fuA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+            <point key="canvasLocation" x="103" y="110"/>
         </scene>
     </scenes>
 </document>
