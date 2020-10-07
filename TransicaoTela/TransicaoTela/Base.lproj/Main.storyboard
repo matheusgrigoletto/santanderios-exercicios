@@ -15,25 +15,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7A-1O-YHY">
-                                <rect key="frame" x="56" y="221" width="153" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7A-1O-YHY">
+                                <rect key="frame" x="83" y="422" width="248" height="52"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <state key="normal" title="SecondVC">
+                                <state key="normal" title="Ir para SecondVC">
                                     <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="Lmk-jA-dtb" kind="presentation" modalPresentationStyle="fullScreen" id="ZAo-kh-wHg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLf-yl-bY6">
+                                <rect key="frame" x="96.5" y="710" width="221" height="52"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="Ir para DetailVC">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedDetailVCButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dyh-KO-njc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aLf-yl-bY6" secondAttribute="bottom" constant="100" id="42F-KH-wwd"/>
+                            <constraint firstItem="m7A-1O-YHY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Kvj-Td-sgZ"/>
+                            <constraint firstItem="m7A-1O-YHY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jo1-oP-Xw3"/>
+                            <constraint firstItem="aLf-yl-bY6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u0c-zU-7bQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="L9Q-Y3-iNl" kind="presentation" identifier="DetailVCSegue" id="0nd-l6-3xe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="0eF-47-imo">
+            <objects>
+                <viewController id="L9Q-Y3-iNl" customClass="DetailVC" customModule="TransicaoTela" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qo5-jc-AeR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="___________" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFU-7n-J4l">
+                                <rect key="frame" x="20" y="50" width="374" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NFU-7n-J4l" firstAttribute="leading" secondItem="a9c-jS-BjF" secondAttribute="leading" constant="20" id="QUO-4H-R2H"/>
+                            <constraint firstItem="NFU-7n-J4l" firstAttribute="top" secondItem="a9c-jS-BjF" secondAttribute="top" constant="50" id="Rgn-XI-5Jk"/>
+                            <constraint firstItem="a9c-jS-BjF" firstAttribute="trailing" secondItem="NFU-7n-J4l" secondAttribute="trailing" constant="20" id="ebI-s2-dag"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a9c-jS-BjF"/>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="NFU-7n-J4l" id="wjx-Dz-AB3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NjP-Md-6MB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1286.9565217391305" y="533.70535714285711"/>
         </scene>
         <!--SecondVC-->
         <scene sceneID="gTS-Lx-zUj">
@@ -43,11 +92,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tzq-f7-59B">
-                                <rect key="frame" x="90" y="226" width="97" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tzq-f7-59B">
+                                <rect key="frame" x="86.5" y="424" width="241" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="FirstVC">
+                                <state key="normal" title="Voltar para FirstVC">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -56,13 +104,17 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Tzq-f7-59B" firstAttribute="centerX" secondItem="id0-bD-whl" secondAttribute="centerX" id="Pp9-rI-Pqv"/>
+                            <constraint firstItem="Tzq-f7-59B" firstAttribute="centerY" secondItem="id0-bD-whl" secondAttribute="centerY" id="cit-BD-wX9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Jxm-eE-9Gc"/>
                     </view>
                     <navigationItem key="navigationItem" id="D8X-ga-IPV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O3Y-u6-AIN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="991" y="139"/>
+            <point key="canvasLocation" x="1287" y="-141"/>
         </scene>
     </scenes>
 </document>

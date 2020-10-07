@@ -14,6 +14,7 @@
 		2F327185251C05B50014F6A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F327184251C05B50014F6A5 /* Assets.xcassets */; };
 		2F327188251C05B50014F6A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F327186251C05B50014F6A5 /* LaunchScreen.storyboard */; };
 		2F327190251C11B00014F6A5 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32718F251C11B00014F6A5 /* SecondVC.swift */; };
+		2FA2FD7F252D3C4C007B9191 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2FD7E252D3C4C007B9191 /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2F327187251C05B50014F6A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F327189251C05B50014F6A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F32718F251C11B00014F6A5 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		2FA2FD7E252D3C4C007B9191 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +62,23 @@
 			children = (
 				2F32717B251C05B30014F6A5 /* AppDelegate.swift */,
 				2F32717D251C05B30014F6A5 /* SceneDelegate.swift */,
-				2F32717F251C05B30014F6A5 /* FirstVC.swift */,
+				2FA2FD7D252D3BD3007B9191 /* Views */,
 				2F327181251C05B30014F6A5 /* Main.storyboard */,
-				2F32718F251C11B00014F6A5 /* SecondVC.swift */,
 				2F327184251C05B50014F6A5 /* Assets.xcassets */,
 				2F327186251C05B50014F6A5 /* LaunchScreen.storyboard */,
 				2F327189251C05B50014F6A5 /* Info.plist */,
 			);
 			path = TransicaoTela;
+			sourceTree = "<group>";
+		};
+		2FA2FD7D252D3BD3007B9191 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F32717F251C05B30014F6A5 /* FirstVC.swift */,
+				2F32718F251C11B00014F6A5 /* SecondVC.swift */,
+				2FA2FD7E252D3C4C007B9191 /* DetailVC.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FA2FD7F252D3C4C007B9191 /* DetailVC.swift in Sources */,
 				2F327180251C05B30014F6A5 /* FirstVC.swift in Sources */,
 				2F32717C251C05B30014F6A5 /* AppDelegate.swift in Sources */,
 				2F327190251C11B00014F6A5 /* SecondVC.swift in Sources */,
