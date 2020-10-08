@@ -33,6 +33,7 @@
                                 </state>
                                 <connections>
                                     <action selector="tappedDetailVCButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dyh-KO-njc"/>
+                                    <segue destination="AST-gk-Tnl" kind="presentation" identifier="DetailVCSegue" id="KPU-tB-dDa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -45,44 +46,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <segue destination="L9Q-Y3-iNl" kind="presentation" identifier="DetailVCSegue" id="0nd-l6-3xe"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
-        </scene>
-        <!--DetailVC-->
-        <scene sceneID="0eF-47-imo">
-            <objects>
-                <viewController id="L9Q-Y3-iNl" customClass="DetailVC" customModule="TransicaoTela" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Qo5-jc-AeR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="___________" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFU-7n-J4l">
-                                <rect key="frame" x="20" y="50" width="374" height="26.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="NFU-7n-J4l" firstAttribute="leading" secondItem="a9c-jS-BjF" secondAttribute="leading" constant="20" id="QUO-4H-R2H"/>
-                            <constraint firstItem="NFU-7n-J4l" firstAttribute="top" secondItem="a9c-jS-BjF" secondAttribute="top" constant="50" id="Rgn-XI-5Jk"/>
-                            <constraint firstItem="a9c-jS-BjF" firstAttribute="trailing" secondItem="NFU-7n-J4l" secondAttribute="trailing" constant="20" id="ebI-s2-dag"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="a9c-jS-BjF"/>
-                    </view>
-                    <connections>
-                        <outlet property="titleLabel" destination="NFU-7n-J4l" id="wjx-Dz-AB3"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NjP-Md-6MB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1286.9565217391305" y="533.70535714285711"/>
         </scene>
         <!--SecondVC-->
         <scene sceneID="gTS-Lx-zUj">
@@ -115,6 +82,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O3Y-u6-AIN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1287" y="-141"/>
+        </scene>
+        <!--DetailStoryboard-->
+        <scene sceneID="peR-PB-67Q">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DetailStoryboard" id="AST-gk-Tnl" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="71O-MY-8Se" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1331" y="386"/>
         </scene>
     </scenes>
 </document>

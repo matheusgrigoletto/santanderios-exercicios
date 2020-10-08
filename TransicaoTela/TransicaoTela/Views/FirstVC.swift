@@ -45,7 +45,6 @@ class FirstVC: UIViewController {
     // isso é importante verificar pra qual tela vc quer ir
     // atraves de segue.identifier
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print(segue.destination)
         // como é teste e eu SEI que vai pra DetailVC (no caso também pode ser SecondVC, mas quando forço a ser DetailVC, retorna nil, não executando as outras linhas abaixo)
         let vc: DetailVC? = segue.destination as? DetailVC
         vc?.view.backgroundColor = .systemRed
