@@ -7,33 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F0D5E83252E1CA700B51F4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0D5E82252E1CA700B51F4A /* AppDelegate.swift */; };
-		2F0D5E85252E1CA700B51F4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0D5E84252E1CA700B51F4A /* SceneDelegate.swift */; };
-		2F0D5E87252E1CA700B51F4A /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0D5E86252E1CA700B51F4A /* CadastroViewController.swift */; };
-		2F0D5E8A252E1CA700B51F4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0D5E88252E1CA700B51F4A /* Main.storyboard */; };
-		2F0D5E8C252E1CAA00B51F4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F0D5E8B252E1CAA00B51F4A /* Assets.xcassets */; };
-		2F0D5E8F252E1CAA00B51F4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0D5E8D252E1CAA00B51F4A /* LaunchScreen.storyboard */; };
-		2F610194252E9E9D0008F5E8 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F610193252E9E9D0008F5E8 /* Usuario.swift */; };
-		2F610196252E9FF30008F5E8 /* Endereco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F610195252E9FF30008F5E8 /* Endereco.swift */; };
-		2F70DF75252E868F00018E32 /* EnderecoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F70DF74252E868F00018E32 /* EnderecoViewController.swift */; };
+		2F1D515C2531C422005904AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D515B2531C422005904AB /* AppDelegate.swift */; };
+		2F1D515E2531C422005904AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D515D2531C422005904AB /* SceneDelegate.swift */; };
+		2F1D51602531C422005904AB /* LojaVirtualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D515F2531C422005904AB /* LojaVirtualViewController.swift */; };
+		2F1D51632531C422005904AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F1D51612531C422005904AB /* Main.storyboard */; };
+		2F1D51652531C425005904AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F1D51642531C425005904AB /* Assets.xcassets */; };
+		2F1D51682531C425005904AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F1D51662531C425005904AB /* LaunchScreen.storyboard */; };
+		2F1D51722531C4B9005904AB /* Produto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D51712531C4B9005904AB /* Produto.swift */; };
+		2FA9F0692531F15F00E685C5 /* ProdutoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA9F0672531F15F00E685C5 /* ProdutoTableViewCell.swift */; };
+		2FA9F06A2531F15F00E685C5 /* ProdutoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA9F0682531F15F00E685C5 /* ProdutoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2F0D5E7F252E1CA700B51F4A /* Cadastro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cadastro.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F0D5E82252E1CA700B51F4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2F0D5E84252E1CA700B51F4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2F0D5E86252E1CA700B51F4A /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
-		2F0D5E89252E1CA700B51F4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2F0D5E8B252E1CAA00B51F4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2F0D5E8E252E1CAA00B51F4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2F0D5E90252E1CAA00B51F4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F610193252E9E9D0008F5E8 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
-		2F610195252E9FF30008F5E8 /* Endereco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endereco.swift; sourceTree = "<group>"; };
-		2F70DF74252E868F00018E32 /* EnderecoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnderecoViewController.swift; sourceTree = "<group>"; };
+		2F1D51582531C422005904AB /* LojaVirtual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LojaVirtual.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F1D515B2531C422005904AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F1D515D2531C422005904AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2F1D515F2531C422005904AB /* LojaVirtualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LojaVirtualViewController.swift; sourceTree = "<group>"; };
+		2F1D51622531C422005904AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F1D51642531C425005904AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F1D51672531C425005904AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F1D51692531C425005904AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F1D51712531C4B9005904AB /* Produto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Produto.swift; sourceTree = "<group>"; };
+		2FA9F0672531F15F00E685C5 /* ProdutoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutoTableViewCell.swift; sourceTree = "<group>"; };
+		2FA9F0682531F15F00E685C5 /* ProdutoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProdutoTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2F0D5E7C252E1CA700B51F4A /* Frameworks */ = {
+		2F1D51552531C422005904AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,91 +43,91 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F0D5E76252E1CA700B51F4A = {
+		2F1D514F2531C422005904AB = {
 			isa = PBXGroup;
 			children = (
-				2F0D5E81252E1CA700B51F4A /* Cadastro */,
-				2F0D5E80252E1CA700B51F4A /* Products */,
+				2F1D515A2531C422005904AB /* LojaVirtual */,
+				2F1D51592531C422005904AB /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2F0D5E80252E1CA700B51F4A /* Products */ = {
+		2F1D51592531C422005904AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F0D5E7F252E1CA700B51F4A /* Cadastro.app */,
+				2F1D51582531C422005904AB /* LojaVirtual.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2F0D5E81252E1CA700B51F4A /* Cadastro */ = {
+		2F1D515A2531C422005904AB /* LojaVirtual */ = {
 			isa = PBXGroup;
 			children = (
-				2F610192252E9E820008F5E8 /* Models */,
-				2F0D5E82252E1CA700B51F4A /* AppDelegate.swift */,
-				2F0D5E84252E1CA700B51F4A /* SceneDelegate.swift */,
-				2FA9A33725312C0E00DF2C23 /* Views */,
-				2F0D5E88252E1CA700B51F4A /* Main.storyboard */,
-				2F0D5E8B252E1CAA00B51F4A /* Assets.xcassets */,
-				2F0D5E8D252E1CAA00B51F4A /* LaunchScreen.storyboard */,
-				2F0D5E90252E1CAA00B51F4A /* Info.plist */,
+				2F1D51702531C4A6005904AB /* Models */,
+				2F1D516F2531C49C005904AB /* Views */,
+				2F1D515B2531C422005904AB /* AppDelegate.swift */,
+				2F1D515D2531C422005904AB /* SceneDelegate.swift */,
+				2F1D515F2531C422005904AB /* LojaVirtualViewController.swift */,
+				2F1D51612531C422005904AB /* Main.storyboard */,
+				2F1D51642531C425005904AB /* Assets.xcassets */,
+				2F1D51662531C425005904AB /* LaunchScreen.storyboard */,
+				2F1D51692531C425005904AB /* Info.plist */,
 			);
-			path = Cadastro;
+			path = LojaVirtual;
 			sourceTree = "<group>";
 		};
-		2F610192252E9E820008F5E8 /* Models */ = {
+		2F1D516F2531C49C005904AB /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2F610193252E9E9D0008F5E8 /* Usuario.swift */,
-				2F610195252E9FF30008F5E8 /* Endereco.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		2FA9A33725312C0E00DF2C23 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				2F0D5E86252E1CA700B51F4A /* CadastroViewController.swift */,
-				2F70DF74252E868F00018E32 /* EnderecoViewController.swift */,
+				2FA9F0672531F15F00E685C5 /* ProdutoTableViewCell.swift */,
+				2FA9F0682531F15F00E685C5 /* ProdutoTableViewCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		2F1D51702531C4A6005904AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F1D51712531C4B9005904AB /* Produto.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2F0D5E7E252E1CA700B51F4A /* Cadastro */ = {
+		2F1D51572531C422005904AB /* LojaVirtual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F0D5E93252E1CAA00B51F4A /* Build configuration list for PBXNativeTarget "Cadastro" */;
+			buildConfigurationList = 2F1D516C2531C425005904AB /* Build configuration list for PBXNativeTarget "LojaVirtual" */;
 			buildPhases = (
-				2F0D5E7B252E1CA700B51F4A /* Sources */,
-				2F0D5E7C252E1CA700B51F4A /* Frameworks */,
-				2F0D5E7D252E1CA700B51F4A /* Resources */,
+				2F1D51542531C422005904AB /* Sources */,
+				2F1D51552531C422005904AB /* Frameworks */,
+				2F1D51562531C422005904AB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Cadastro;
-			productName = Cadastro;
-			productReference = 2F0D5E7F252E1CA700B51F4A /* Cadastro.app */;
+			name = LojaVirtual;
+			productName = LojaVirtual;
+			productReference = 2F1D51582531C422005904AB /* LojaVirtual.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2F0D5E77252E1CA700B51F4A /* Project object */ = {
+		2F1D51502531C422005904AB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
 				LastUpgradeCheck = 1170;
 				ORGANIZATIONNAME = "Matheus B. Grigoletto";
 				TargetAttributes = {
-					2F0D5E7E252E1CA700B51F4A = {
+					2F1D51572531C422005904AB = {
 						CreatedOnToolsVersion = 11.7;
 					};
 				};
 			};
-			buildConfigurationList = 2F0D5E7A252E1CA700B51F4A /* Build configuration list for PBXProject "Cadastro" */;
+			buildConfigurationList = 2F1D51532531C422005904AB /* Build configuration list for PBXProject "LojaVirtual" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -135,58 +135,58 @@
 				en,
 				Base,
 			);
-			mainGroup = 2F0D5E76252E1CA700B51F4A;
-			productRefGroup = 2F0D5E80252E1CA700B51F4A /* Products */;
+			mainGroup = 2F1D514F2531C422005904AB;
+			productRefGroup = 2F1D51592531C422005904AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2F0D5E7E252E1CA700B51F4A /* Cadastro */,
+				2F1D51572531C422005904AB /* LojaVirtual */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2F0D5E7D252E1CA700B51F4A /* Resources */ = {
+		2F1D51562531C422005904AB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F0D5E8F252E1CAA00B51F4A /* LaunchScreen.storyboard in Resources */,
-				2F0D5E8C252E1CAA00B51F4A /* Assets.xcassets in Resources */,
-				2F0D5E8A252E1CA700B51F4A /* Main.storyboard in Resources */,
+				2F1D51682531C425005904AB /* LaunchScreen.storyboard in Resources */,
+				2FA9F06A2531F15F00E685C5 /* ProdutoTableViewCell.xib in Resources */,
+				2F1D51652531C425005904AB /* Assets.xcassets in Resources */,
+				2F1D51632531C422005904AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2F0D5E7B252E1CA700B51F4A /* Sources */ = {
+		2F1D51542531C422005904AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F610196252E9FF30008F5E8 /* Endereco.swift in Sources */,
-				2F0D5E87252E1CA700B51F4A /* CadastroViewController.swift in Sources */,
-				2F0D5E83252E1CA700B51F4A /* AppDelegate.swift in Sources */,
-				2F0D5E85252E1CA700B51F4A /* SceneDelegate.swift in Sources */,
-				2F610194252E9E9D0008F5E8 /* Usuario.swift in Sources */,
-				2F70DF75252E868F00018E32 /* EnderecoViewController.swift in Sources */,
+				2F1D51602531C422005904AB /* LojaVirtualViewController.swift in Sources */,
+				2F1D51722531C4B9005904AB /* Produto.swift in Sources */,
+				2F1D515C2531C422005904AB /* AppDelegate.swift in Sources */,
+				2F1D515E2531C422005904AB /* SceneDelegate.swift in Sources */,
+				2FA9F0692531F15F00E685C5 /* ProdutoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2F0D5E88252E1CA700B51F4A /* Main.storyboard */ = {
+		2F1D51612531C422005904AB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2F0D5E89252E1CA700B51F4A /* Base */,
+				2F1D51622531C422005904AB /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		2F0D5E8D252E1CAA00B51F4A /* LaunchScreen.storyboard */ = {
+		2F1D51662531C425005904AB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2F0D5E8E252E1CAA00B51F4A /* Base */,
+				2F1D51672531C425005904AB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -194,7 +194,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2F0D5E91252E1CAA00B51F4A /* Debug */ = {
+		2F1D516A2531C425005904AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -254,7 +254,7 @@
 			};
 			name = Debug;
 		};
-		2F0D5E92252E1CAA00B51F4A /* Release */ = {
+		2F1D516B2531C425005904AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -308,38 +308,36 @@
 			};
 			name = Release;
 		};
-		2F0D5E94252E1CAA00B51F4A /* Debug */ = {
+		2F1D516D2531C425005904AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TFMF8V2D92;
-				INFOPLIST_FILE = Cadastro/Info.plist;
+				INFOPLIST_FILE = LojaVirtual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.pro.nova.Cadastro;
+				PRODUCT_BUNDLE_IDENTIFIER = br.pro.nova.LojaVirtual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		2F0D5E95252E1CAA00B51F4A /* Release */ = {
+		2F1D516E2531C425005904AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TFMF8V2D92;
-				INFOPLIST_FILE = Cadastro/Info.plist;
+				INFOPLIST_FILE = LojaVirtual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.pro.nova.Cadastro;
+				PRODUCT_BUNDLE_IDENTIFIER = br.pro.nova.LojaVirtual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -349,25 +347,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2F0D5E7A252E1CA700B51F4A /* Build configuration list for PBXProject "Cadastro" */ = {
+		2F1D51532531C422005904AB /* Build configuration list for PBXProject "LojaVirtual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F0D5E91252E1CAA00B51F4A /* Debug */,
-				2F0D5E92252E1CAA00B51F4A /* Release */,
+				2F1D516A2531C425005904AB /* Debug */,
+				2F1D516B2531C425005904AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F0D5E93252E1CAA00B51F4A /* Build configuration list for PBXNativeTarget "Cadastro" */ = {
+		2F1D516C2531C425005904AB /* Build configuration list for PBXNativeTarget "LojaVirtual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F0D5E94252E1CAA00B51F4A /* Debug */,
-				2F0D5E95252E1CAA00B51F4A /* Release */,
+				2F1D516D2531C425005904AB /* Debug */,
+				2F1D516E2531C425005904AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2F0D5E77252E1CA700B51F4A /* Project object */;
+	rootObject = 2F1D51502531C422005904AB /* Project object */;
 }

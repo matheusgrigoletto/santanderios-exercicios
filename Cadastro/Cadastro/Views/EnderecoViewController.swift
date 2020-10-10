@@ -32,10 +32,6 @@ class EnderecoViewController: UIViewController {
         self.salvarEnderecoButton.layer.cornerRadius = 4
     }
     
-    @IBAction func tappedVoltarButton(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
     @IBAction func tappedSalvarButton(_ sender: UIButton) {
         // TODO: remover
         self.dismiss(animated: true, completion: nil)

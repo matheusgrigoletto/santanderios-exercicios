@@ -12,22 +12,25 @@ class CadastroViewController: UIViewController {
 
     let enderecoSEGUE: String = "EnderecoSegue"
     
+    // MARK: IBOutlets User
     @IBOutlet weak var nomeTextField: UITextField!
     @IBOutlet weak var cpfTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var dataNascimentoDatePicker: UIDatePicker!
+    @IBOutlet weak var dataNascimentoTextField: UITextField!
+    
+    // MARK: IBOutlets View Endereço
     @IBOutlet weak var cadastrarEnderecoButton: UIButton!
     @IBOutlet weak var enderecoTextoLabel: UILabel!
-    @IBOutlet weak var cadastrarButton: UIButton!
     
     fileprivate func initDelegates() {
         self.nomeTextField.delegate = self
         self.cpfTextField.delegate = self
         self.emailTextField.delegate = self
+        self.dataNascimentoTextField.delegate = self
     }
     
     fileprivate func initElements() {
-        self.cadastrarButton.layer.cornerRadius = 4
+        
     }
     
     override func viewDidLoad() {
@@ -40,8 +43,33 @@ class CadastroViewController: UIViewController {
         self.view.addGestureRecognizer(tap)
     }
     
+    func validateUsuarioFields() -> Bool {
+        if self.nomeTextField.text?.isEmpty == true || self.cpfTextField.text?.isEmpty == true || self.emailTextField.text?.isEmpty == true || self.dataNascimentoTextField.text?.isEmpty == true {
+            print("validateUsuarioFields: Existem campos obrigatórios ainda não preenchidos")
+            return false
+        }
+        return true
+    }
+    
     @IBAction func tappedCadastrarEnderecoButton(_ sender: UIButton) {
-        self.performSegue(withIdentifier: self.enderecoSEGUE, sender: nil)
+        if self.validateUsuarioFields() {
+            self.performSegue(withIdentifier: self.enderecoSEGUE, sender: nil)
+        } else {
+            print("tappedCadastrarEnderecoButton: Existem campos obrigatórios ainda não preenchidos")
+        }
+    }
+    
+    var isRegisterValid: Bool = false
+    var Usuario: Usuario?
+    
+    fileprivate func validateTextField(textField: UITextField) {
+        if let value = textField.text {
+            self.isRegisterValid = !value.isEmpty
+        } else {
+            self.isRegisterValid = false
+        }
+
+        print("validateTextField, self.isRegisterValid = \(self.isRegisterValid)")
     }
 }
 
@@ -52,10 +80,16 @@ extension CadastroViewController: UITextFieldDelegate {
         } else if textField.isEqual(self.cpfTextField) {
             self.emailTextField.becomeFirstResponder()
         } else if textField.isEqual(self.emailTextField) {
-            textField.resignFirstResponder()
+            self.dataNascimentoTextField.becomeFirstResponder()
+        } else if textField.isEqual(self.dataNascimentoTextField) {
+           textField.resignFirstResponder()
         }
         
         return true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        self.validateTextField(textField: textField)
     }
 }
 
