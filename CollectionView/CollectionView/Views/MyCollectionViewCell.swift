@@ -31,6 +31,7 @@ class MyCollectionViewCell: UICollectionViewCell {
     // MARK: # IBActions
     
     @IBAction func tappedButton(_ sender: Any) {
+        print("tappedButton")
     }
     
 }
