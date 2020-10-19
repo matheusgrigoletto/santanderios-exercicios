@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B22D8B7D25253F36002EA2BC /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D8B7C25253F36002EA2BC /* Usuario.swift */; };
+		B22D8B8525254182002EA2BC /* Endereco.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22D8B8425254182002EA2BC /* Endereco.swift */; };
+		B28B4288251C03E5007DF763 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B4287251C03E5007DF763 /* AppDelegate.swift */; };
+		B28B428A251C03E5007DF763 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B4289251C03E5007DF763 /* SceneDelegate.swift */; };
+		B28B428C251C03E5007DF763 /* CadastroUsuarioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B428B251C03E5007DF763 /* CadastroUsuarioVC.swift */; };
+		B28B428F251C03E5007DF763 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28B428D251C03E5007DF763 /* Main.storyboard */; };
+		B28B4291251C03E9007DF763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B28B4290251C03E9007DF763 /* Assets.xcassets */; };
+		B28B4294251C03E9007DF763 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28B4292251C03E9007DF763 /* LaunchScreen.storyboard */; };
+		B28B429F251C03E9007DF763 /* TransicaoTelaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B429E251C03E9007DF763 /* TransicaoTelaTests.swift */; };
+		B28B42AA251C03E9007DF763 /* TransicaoTelaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B42A9251C03E9007DF763 /* TransicaoTelaUITests.swift */; };
+		B28B42BE251C12B8007DF763 /* CadastroEnderecoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B42BD251C12B8007DF763 /* CadastroEnderecoVC.swift */; };
+		B294F5F5251EB13D006DA580 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B294F5F4251EB13D006DA580 /* DetailVC.swift */; };
+		B2A0830025229A9700C31814 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2A082FF25229A9700C31814 /* Detail.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B28B429B251C03E9007DF763 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B28B427C251C03E5007DF763 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B28B4283251C03E5007DF763;
+			remoteInfo = TransicaoTela;
+		};
+		B28B42A6251C03E9007DF763 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B28B427C251C03E5007DF763 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B28B4283251C03E5007DF763;
+			remoteInfo = TransicaoTela;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B22D8B7C25253F36002EA2BC /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		B22D8B8425254182002EA2BC /* Endereco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endereco.swift; sourceTree = "<group>"; };
+		B28B4284251C03E5007DF763 /* TransicaoTela.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransicaoTela.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B28B4287251C03E5007DF763 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B28B4289251C03E5007DF763 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B28B428B251C03E5007DF763 /* CadastroUsuarioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroUsuarioVC.swift; sourceTree = "<group>"; };
+		B28B428E251C03E5007DF763 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B28B4290251C03E9007DF763 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B28B4293251C03E9007DF763 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B28B4295251C03E9007DF763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B28B429A251C03E9007DF763 /* TransicaoTelaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransicaoTelaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B28B429E251C03E9007DF763 /* TransicaoTelaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransicaoTelaTests.swift; sourceTree = "<group>"; };
+		B28B42A0251C03E9007DF763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B28B42A5251C03E9007DF763 /* TransicaoTelaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransicaoTelaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B28B42A9251C03E9007DF763 /* TransicaoTelaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransicaoTelaUITests.swift; sourceTree = "<group>"; };
+		B28B42AB251C03E9007DF763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B28B42BD251C12B8007DF763 /* CadastroEnderecoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroEnderecoVC.swift; sourceTree = "<group>"; };
+		B294F5F4251EB13D006DA580 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		B2A082FF25229A9700C31814 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B28B4281251C03E5007DF763 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B28B4297251C03E9007DF763 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B28B42A2251C03E9007DF763 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B22D8B7B25253F0B002EA2BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B22D8B7C25253F36002EA2BC /* Usuario.swift */,
+				B22D8B8425254182002EA2BC /* Endereco.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B28B427B251C03E5007DF763 = {
+			isa = PBXGroup;
+			children = (
+				B28B4286251C03E5007DF763 /* TransicaoTela */,
+				B28B429D251C03E9007DF763 /* TransicaoTelaTests */,
+				B28B42A8251C03E9007DF763 /* TransicaoTelaUITests */,
+				B28B4285251C03E5007DF763 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B28B4285251C03E5007DF763 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B28B4284251C03E5007DF763 /* TransicaoTela.app */,
+				B28B429A251C03E9007DF763 /* TransicaoTelaTests.xctest */,
+				B28B42A5251C03E9007DF763 /* TransicaoTelaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B28B4286251C03E5007DF763 /* TransicaoTela */ = {
+			isa = PBXGroup;
+			children = (
+				B22D8B7B25253F0B002EA2BC /* Model */,
+				B28B42C2251C12C1007DF763 /* Views */,
+				B28B4287251C03E5007DF763 /* AppDelegate.swift */,
+				B28B4289251C03E5007DF763 /* SceneDelegate.swift */,
+				B28B428D251C03E5007DF763 /* Main.storyboard */,
+				B2A082FF25229A9700C31814 /* Detail.storyboard */,
+				B28B4290251C03E9007DF763 /* Assets.xcassets */,
+				B28B4292251C03E9007DF763 /* LaunchScreen.storyboard */,
+				B28B4295251C03E9007DF763 /* Info.plist */,
+			);
+			path = TransicaoTela;
+			sourceTree = "<group>";
+		};
+		B28B429D251C03E9007DF763 /* TransicaoTelaTests */ = {
+			isa = PBXGroup;
+			children = (
+				B28B429E251C03E9007DF763 /* TransicaoTelaTests.swift */,
+				B28B42A0251C03E9007DF763 /* Info.plist */,
+			);
+			path = TransicaoTelaTests;
+			sourceTree = "<group>";
+		};
+		B28B42A8251C03E9007DF763 /* TransicaoTelaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B28B42A9251C03E9007DF763 /* TransicaoTelaUITests.swift */,
+				B28B42AB251C03E9007DF763 /* Info.plist */,
+			);
+			path = TransicaoTelaUITests;
+			sourceTree = "<group>";
+		};
+		B28B42C2251C12C1007DF763 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B28B428B251C03E5007DF763 /* CadastroUsuarioVC.swift */,
+				B28B42BD251C12B8007DF763 /* CadastroEnderecoVC.swift */,
+				B294F5F4251EB13D006DA580 /* DetailVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B28B4283251C03E5007DF763 /* TransicaoTela */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B28B42AE251C03E9007DF763 /* Build configuration list for PBXNativeTarget "TransicaoTela" */;
+			buildPhases = (
+				B28B4280251C03E5007DF763 /* Sources */,
+				B28B4281251C03E5007DF763 /* Frameworks */,
+				B28B4282251C03E5007DF763 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransicaoTela;
+			productName = TransicaoTela;
+			productReference = B28B4284251C03E5007DF763 /* TransicaoTela.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B28B4299251C03E9007DF763 /* TransicaoTelaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B28B42B1251C03E9007DF763 /* Build configuration list for PBXNativeTarget "TransicaoTelaTests" */;
+			buildPhases = (
+				B28B4296251C03E9007DF763 /* Sources */,
+				B28B4297251C03E9007DF763 /* Frameworks */,
+				B28B4298251C03E9007DF763 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B28B429C251C03E9007DF763 /* PBXTargetDependency */,
+			);
+			name = TransicaoTelaTests;
+			productName = TransicaoTelaTests;
+			productReference = B28B429A251C03E9007DF763 /* TransicaoTelaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B28B42A4251C03E9007DF763 /* TransicaoTelaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B28B42B4251C03E9007DF763 /* Build configuration list for PBXNativeTarget "TransicaoTelaUITests" */;
+			buildPhases = (
+				B28B42A1251C03E9007DF763 /* Sources */,
+				B28B42A2251C03E9007DF763 /* Frameworks */,
+				B28B42A3251C03E9007DF763 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B28B42A7251C03E9007DF763 /* PBXTargetDependency */,
+			);
+			name = TransicaoTelaUITests;
+			productName = TransicaoTelaUITests;
+			productReference = B28B42A5251C03E9007DF763 /* TransicaoTelaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B28B427C251C03E5007DF763 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					B28B4283251C03E5007DF763 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					B28B4299251C03E9007DF763 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = B28B4283251C03E5007DF763;
+					};
+					B28B42A4251C03E9007DF763 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = B28B4283251C03E5007DF763;
+					};
+				};
+			};
+			buildConfigurationList = B28B427F251C03E5007DF763 /* Build configuration list for PBXProject "TransicaoTela" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B28B427B251C03E5007DF763;
+			productRefGroup = B28B4285251C03E5007DF763 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B28B4283251C03E5007DF763 /* TransicaoTela */,
+				B28B4299251C03E9007DF763 /* TransicaoTelaTests */,
+				B28B42A4251C03E9007DF763 /* TransicaoTelaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B28B4282251C03E5007DF763 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B28B4294251C03E9007DF763 /* LaunchScreen.storyboard in Resources */,
+				B28B4291251C03E9007DF763 /* Assets.xcassets in Resources */,
+				B28B428F251C03E5007DF763 /* Main.storyboard in Resources */,
+				B2A0830025229A9700C31814 /* Detail.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B28B4298251C03E9007DF763 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B28B42A3251C03E9007DF763 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B28B4280251C03E5007DF763 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B294F5F5251EB13D006DA580 /* DetailVC.swift in Sources */,
+				B28B428C251C03E5007DF763 /* CadastroUsuarioVC.swift in Sources */,
+				B22D8B7D25253F36002EA2BC /* Usuario.swift in Sources */,
+				B28B4288251C03E5007DF763 /* AppDelegate.swift in Sources */,
+				B22D8B8525254182002EA2BC /* Endereco.swift in Sources */,
+				B28B42BE251C12B8007DF763 /* CadastroEnderecoVC.swift in Sources */,
+				B28B428A251C03E5007DF763 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B28B4296251C03E9007DF763 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B28B429F251C03E9007DF763 /* TransicaoTelaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B28B42A1251C03E9007DF763 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B28B42AA251C03E9007DF763 /* TransicaoTelaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B28B429C251C03E9007DF763 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B28B4283251C03E5007DF763 /* TransicaoTela */;
+			targetProxy = B28B429B251C03E9007DF763 /* PBXContainerItemProxy */;
+		};
+		B28B42A7251C03E9007DF763 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B28B4283251C03E5007DF763 /* TransicaoTela */;
+			targetProxy = B28B42A6251C03E9007DF763 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B28B428D251C03E5007DF763 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B28B428E251C03E5007DF763 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B28B4292251C03E9007DF763 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B28B4293251C03E9007DF763 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B28B42AC251C03E9007DF763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B28B42AD251C03E9007DF763 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B28B42AF251C03E9007DF763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TransicaoTela/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Digital-House.TransicaoTela";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B28B42B0251C03E9007DF763 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TransicaoTela/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Digital-House.TransicaoTela";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B28B42B2251C03E9007DF763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TransicaoTelaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Digital-House.TransicaoTelaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransicaoTela.app/TransicaoTela";
+			};
+			name = Debug;
+		};
+		B28B42B3251C03E9007DF763 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TransicaoTelaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Digital-House.TransicaoTelaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransicaoTela.app/TransicaoTela";
+			};
+			name = Release;
+		};
+		B28B42B5251C03E9007DF763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TransicaoTelaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Digital-House.TransicaoTelaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TransicaoTela;
+			};
+			name = Debug;
+		};
+		B28B42B6251C03E9007DF763 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TransicaoTelaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Digital-House.TransicaoTelaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TransicaoTela;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B28B427F251C03E5007DF763 /* Build configuration list for PBXProject "TransicaoTela" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B28B42AC251C03E9007DF763 /* Debug */,
+				B28B42AD251C03E9007DF763 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B28B42AE251C03E9007DF763 /* Build configuration list for PBXNativeTarget "TransicaoTela" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B28B42AF251C03E9007DF763 /* Debug */,
+				B28B42B0251C03E9007DF763 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B28B42B1251C03E9007DF763 /* Build configuration list for PBXNativeTarget "TransicaoTelaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B28B42B2251C03E9007DF763 /* Debug */,
+				B28B42B3251C03E9007DF763 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B28B42B4251C03E9007DF763 /* Build configuration list for PBXNativeTarget "TransicaoTelaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B28B42B5251C03E9007DF763 /* Debug */,
+				B28B42B6251C03E9007DF763 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B28B427C251C03E5007DF763 /* Project object */;
+}
