@@ -36,6 +36,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
+                                        <connections>
+                                            <segue destination="cJf-eF-NTr" kind="presentation" identifier="DetalhesViewController" id="9EF-qG-xKA"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -56,20 +59,46 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Detalhes View Controller-->
         <scene sceneID="iOH-Bs-3bZ">
             <objects>
-                <viewController id="cJf-eF-NTr" sceneMemberID="viewController">
+                <viewController id="cJf-eF-NTr" customClass="DetalhesViewController" customModule="CollectionView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3lS-SP-IBj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="amL-4y-tnc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="XTZ-Kg-oK8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrp-33-Hys">
+                                <rect key="frame" x="12" y="310" width="390" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="amL-4y-tnc" firstAttribute="top" secondItem="9Tq-Bx-nfk" secondAttribute="top" id="7bB-CF-BRe"/>
+                            <constraint firstItem="hrp-33-Hys" firstAttribute="leading" secondItem="9Tq-Bx-nfk" secondAttribute="leading" constant="12" id="QKA-Xq-ZJf"/>
+                            <constraint firstItem="hrp-33-Hys" firstAttribute="top" secondItem="amL-4y-tnc" secondAttribute="bottom" constant="30" id="aPV-M8-U4y"/>
+                            <constraint firstItem="9Tq-Bx-nfk" firstAttribute="trailing" secondItem="hrp-33-Hys" secondAttribute="trailing" constant="12" id="cDz-89-bEZ"/>
+                            <constraint firstItem="amL-4y-tnc" firstAttribute="leading" secondItem="9Tq-Bx-nfk" secondAttribute="leading" id="lka-fl-UJ0"/>
+                            <constraint firstItem="amL-4y-tnc" firstAttribute="trailing" secondItem="9Tq-Bx-nfk" secondAttribute="trailing" id="t5J-fo-zIh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9Tq-Bx-nfk"/>
                     </view>
+                    <connections>
+                        <outlet property="eventoDatailLabel" destination="hrp-33-Hys" id="dvF-KX-gCy"/>
+                        <outlet property="eventoImageView" destination="amL-4y-tnc" id="z4l-Lp-NCy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iit-Sm-Si0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1094" y="139"/>
+            <point key="canvasLocation" x="1092.753623188406" y="138.61607142857142"/>
         </scene>
     </scenes>
 </document>

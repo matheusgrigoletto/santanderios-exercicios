@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol MyCollectionViewCellDelegate: class {
+    func goDetailEvent(evento: Evento)
+}
+
 class MyCollectionViewCell: UICollectionViewCell {
 
     // MARK: # IBOutlets
@@ -15,11 +19,18 @@ class MyCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var backgroundImage: UIImageView!
     
+    // MARK: # Class properties
+    
+    weak var delegate: MyCollectionViewCellDelegate?
+    
+    var currentEvent: Evento?
+    
     // MARK: # Class methods
     
     func setup(evento: Evento) {
         self.titleLabel.text = evento.nome
         self.backgroundImage.image = UIImage(named: evento.backgroundImageName ?? "")
+        self.currentEvent = evento
     }
     
     // MARK: # LifeCycle
@@ -31,7 +42,7 @@ class MyCollectionViewCell: UICollectionViewCell {
     // MARK: # IBActions
     
     @IBAction func tappedButton(_ sender: Any) {
-        print("tappedButton")
+        self.delegate?.goDetailEvent(evento: self.currentEvent!)
     }
     
 }

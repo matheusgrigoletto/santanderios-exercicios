@@ -16,6 +16,7 @@
 		2FA95D5C253A631000010151 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA95D5A253A631000010151 /* MyCollectionViewCell.swift */; };
 		2FA95D5D253A631000010151 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA95D5B253A631000010151 /* MyCollectionViewCell.xib */; };
 		2FA95D60253A689300010151 /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA95D5F253A689300010151 /* Evento.swift */; };
+		2FCE09A8253E50E800695CDE /* DetalhesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE09A7253E50E800695CDE /* DetalhesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		2FA95D5A253A631000010151 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		2FA95D5B253A631000010151 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 		2FA95D5F253A689300010151 /* Evento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evento.swift; sourceTree = "<group>"; };
+		2FCE09A7253E50E800695CDE /* DetalhesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				2FA95D4B253A5E9D00010151 /* Main.storyboard */,
 				2FA95D5A253A631000010151 /* MyCollectionViewCell.swift */,
 				2FA95D5B253A631000010151 /* MyCollectionViewCell.xib */,
+				2FCE09A7253E50E800695CDE /* DetalhesViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			files = (
 				2FA95D4A253A5E9D00010151 /* ViewController.swift in Sources */,
 				2FA95D46253A5E9D00010151 /* AppDelegate.swift in Sources */,
+				2FCE09A8253E50E800695CDE /* DetalhesViewController.swift in Sources */,
 				2FA95D5C253A631000010151 /* MyCollectionViewCell.swift in Sources */,
 				2FA95D48253A5E9D00010151 /* SceneDelegate.swift in Sources */,
 				2FA95D60253A689300010151 /* Evento.swift in Sources */,

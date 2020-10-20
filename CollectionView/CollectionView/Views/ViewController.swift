@@ -19,6 +19,8 @@ class ViewController: UIViewController {
         Evento(nome: "Evento #4", backgroundImageName: "image4.jpg"),
     ]
     
+    var evento: Evento?
+    
     fileprivate func initConfig() {
         self.myCollectionView.register(UINib(nibName: "MyCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "MyCollectionViewCell")
         
@@ -31,6 +33,13 @@ class ViewController: UIViewController {
         
         self.initConfig()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "DetalhesViewController" {
+            let viewController: DetalhesViewController? = segue.destination as? DetalhesViewController
+            viewController?.evento = self.evento
+        }
+    }
 
 }
 
@@ -42,12 +51,21 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: MyCollectionViewCell? = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCollectionViewCell", for: indexPath) as? MyCollectionViewCell
         
+        cell?.delegate = self
+        
         cell?.setup(evento: self.arrayEventos[indexPath.row])
         
         return cell ?? UICollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(self.arrayEventos[indexPath.row].nome!)
+        //
+    }
+}
+
+extension ViewController: MyCollectionViewCellDelegate {
+    func goDetailEvent(evento: Evento) {
+        self.evento = evento
+        self.performSegue(withIdentifier: "DetalhesViewController", sender: nil)
     }
 }
