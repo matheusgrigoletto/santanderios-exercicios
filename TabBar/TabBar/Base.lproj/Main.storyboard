@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GLp-cI-to8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contas-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Contas" image="barcode" catalog="system" selectedImage="barcode" id="mgB-Sv-IAO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1100" y="489"/>
+        </scene>
+        <!--Extrato-->
+        <scene sceneID="R3w-zy-jqI">
+            <objects>
+                <viewController id="ig6-s7-kJk" customClass="ExtratoViewController" customModule="TabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eeW-cA-asa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dXp-di-AUD">
+                                <rect key="frame" x="16" y="76" width="382" height="737"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HKG-gX-c4D">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="71"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saldo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWi-Rq-mXm">
+                                                <rect key="frame" x="0.0" y="0.0" width="56" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="uja-nE-Z6K">
+                                                <rect key="frame" x="0.0" y="37" width="382" height="34"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 1000.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HwT-RI-7qI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="308" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyT-vq-KYe">
+                                                        <rect key="frame" x="340" y="0.0" width="42" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="42" id="Qxg-vn-DxY"/>
+                                                            <constraint firstAttribute="height" constant="34" id="WYx-Di-zzH"/>
+                                                        </constraints>
+                                                        <color key="tintColor" red="0.78650755859999999" green="0.1014737005" blue="0.097924116280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" image="eye" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="tappedVerSaldoButton:" destination="ig6-s7-kJk" eventType="touchUpInside" id="7s9-OT-3QI"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="uja-nE-Z6K" secondAttribute="trailing" id="eVM-UU-E1a"/>
+                                            <constraint firstItem="uja-nE-Z6K" firstAttribute="leading" secondItem="HKG-gX-c4D" secondAttribute="leading" id="ghc-4Z-WWa"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4dn-WQ-QNK">
+                                        <rect key="frame" x="0.0" y="87" width="382" height="650"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extrato" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65M-Qv-lLb">
+                                                <rect key="frame" x="0.0" y="0.0" width="68" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Z5L-kh-tYs">
+                                                <rect key="frame" x="0.0" y="37" width="382" height="613"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </tableView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Z5L-kh-tYs" secondAttribute="trailing" id="Idf-NR-4dz"/>
+                                            <constraint firstItem="Z5L-kh-tYs" firstAttribute="leading" secondItem="4dn-WQ-QNK" secondAttribute="leading" id="cM4-1I-UBv"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4dn-WQ-QNK" firstAttribute="leading" secondItem="dXp-di-AUD" secondAttribute="leading" id="BbI-qe-CYe"/>
+                                    <constraint firstAttribute="trailing" secondItem="4dn-WQ-QNK" secondAttribute="trailing" id="Dj6-28-kV8"/>
+                                    <constraint firstItem="HKG-gX-c4D" firstAttribute="leading" secondItem="dXp-di-AUD" secondAttribute="leading" id="RVm-bS-R4N"/>
+                                    <constraint firstAttribute="trailing" secondItem="HKG-gX-c4D" secondAttribute="trailing" id="dU7-yD-eCb"/>
+                                    <constraint firstItem="HKG-gX-c4D" firstAttribute="top" secondItem="dXp-di-AUD" secondAttribute="top" id="ejn-gJ-oen"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dXp-di-AUD" secondAttribute="trailing" constant="16" id="4K0-bg-vCq"/>
+                            <constraint firstItem="dXp-di-AUD" firstAttribute="top" secondItem="VTz-Kt-Fsb" secondAttribute="top" constant="32" id="7gr-Q4-yEZ"/>
+                            <constraint firstItem="dXp-di-AUD" firstAttribute="leading" secondItem="VTz-Kt-Fsb" secondAttribute="leading" constant="16" id="EG8-rd-eK0"/>
+                            <constraint firstItem="dXp-di-AUD" firstAttribute="bottom" secondItem="VTz-Kt-Fsb" secondAttribute="bottom" id="TuD-h9-edE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VTz-Kt-Fsb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Extrato" image="list.dash" catalog="system" selectedImage="list.dash" id="zxK-A8-IwO"/>
+                    <connections>
+                        <outlet property="saldoLabel" destination="HwT-RI-7qI" id="iz7-4G-i4D"/>
+                        <outlet property="timelineTableView" destination="Z5L-kh-tYs" id="6IO-sF-oHE"/>
+                        <outlet property="verSaldoButton" destination="qyT-vq-KYe" id="J1w-2s-VBL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ljB-99-wOs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1242.0289855072465" y="488.83928571428567"/>
+        </scene>
+        <!--Cartões-->
+        <scene sceneID="boe-ft-ddT">
+            <objects>
+                <viewController id="scd-I2-xBt" customClass="CartoesViewController" customModule="TabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rJP-mD-EJD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D6h-Ih-FjU">
+                                <rect key="frame" x="20" y="44" width="374" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="D6h-Ih-FjU" firstAttribute="top" secondItem="cby-Mk-2wG" secondAttribute="top" id="5uo-7I-lUM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D6h-Ih-FjU" secondAttribute="trailing" id="FpC-Sw-VXn"/>
+                            <constraint firstItem="D6h-Ih-FjU" firstAttribute="leading" secondItem="rJP-mD-EJD" secondAttribute="leadingMargin" id="h4Q-yg-Im0"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="D6h-Ih-FjU" secondAttribute="bottom" id="nzK-vj-Dc5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cby-Mk-2wG"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cartões" image="creditcard.fill" catalog="system" selectedImage="creditcard.fill" id="IU1-YU-7co"/>
+                    <connections>
+                        <outlet property="tableView" destination="D6h-Ih-FjU" id="PaM-dp-BIg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xm2-tB-qqj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58" y="489"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="3KK-MV-P2U">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="GLp-cI-to8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c8L-U0-mWx">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.78650755863989641" green="0.10147370048410741" blue="0.09792411627638041" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ig6-s7-kJk" kind="relationship" relationship="viewControllers" id="Gfg-lg-qjT"/>
+                        <segue destination="scd-I2-xBt" kind="relationship" relationship="viewControllers" id="Omd-z0-jaX"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="U8q-2J-DlQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4kE-c5-m48" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57" y="-364"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="barcode" catalog="system" width="128" height="93"/>
+        <image name="creditcard.fill" catalog="system" width="128" height="91"/>
+        <image name="eye" catalog="system" width="128" height="81"/>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
+    </resources>
+</document>
